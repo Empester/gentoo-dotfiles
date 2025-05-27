@@ -117,11 +117,10 @@ _installPackages() {
 
 # Required packages for the installer
 packages=(
-    "wget"
-    "unzip"
-    "app-shells/gum"
-    "rsync"
-    "git"
+    "net-miscwget"
+    "app-arch/unzip"
+    "net-misc/rsync"
+    "dev-vcs/git"
 )
 
 latest_version=$(get_latest_release)
@@ -220,7 +219,7 @@ echo "- ML4W Dotfiles for Hyprland $pkgver (latest stable release)"
 echo "- ML4W Dotfiles for Hyprland Rolling Release (main branch including the latest commits)"
 echo
 
-version=$(gum choose "main-release" "rolling-release" "CANCEL")
+# version=$(gum choose "main-release" "rolling-release" "CANCEL")
 
 if [ "$version" == "main-release" ]; then
     echo ":: Installing Main Release"
@@ -311,7 +310,7 @@ echo ":: Installation complete."
 echo
 
 # Start Spinner
-gum spin --spinner dot --title "Starting setup now..." -- sleep 3
+# gum spin --spinner dot --title "Starting setup now..." -- sleep 3
 
 # Run setup with Gentoo platform flag
 ml4w-hyprland-setup -p gentoo
