@@ -117,6 +117,7 @@ _installPackages() {
 
 # Required packages for the installer
 packages=(
+    "gui-wm/hyprland"
     "net-misc/wget"
     "app-arch/unzip"
     "net-misc/rsync"
