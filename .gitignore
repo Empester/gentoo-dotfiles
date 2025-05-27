@@ -1,3 +1,5 @@
 __pycache__/
 bookmarks
 .idea
+setup-arch.sh
+setup-fedora.sh
