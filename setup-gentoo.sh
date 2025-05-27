@@ -210,7 +210,7 @@ echo
 # Variables from PKGBUILD
 pkgname='ml4w-hyprland'
 pkgver='2.9.8.6'
-srcurl="https://github.com/mylinuxforwork/dotfiles/archive/refs/tags/${pkgver}.tar.gz"
+srcurl="https://github.com/empester/gentoo-dotfiles/archive/refs/tags/${pkgver}.tar.gz"
 tmpdir="/tmp/${pkgname}-${pkgver}-install"
 installprefix="/usr"
 
@@ -276,7 +276,7 @@ elif [ "$version" == "rolling-release" ]; then
         }
     else
         echo ":: Cloning rolling release repo..."
-        git clone https://github.com/mylinuxforwork/dotfiles.git "$repodir" || {
+        git clone https://github.com/empester/gentoo-dotfiles.git "$repodir" || {
             echo ":: ERROR: Failed to clone repo."
             exit 1
         }
