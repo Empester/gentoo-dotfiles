@@ -117,7 +117,7 @@ _installPackages() {
 
 # Required packages for the installer
 packages=(
-    "net-miscwget"
+    "net-misc/wget"
     "app-arch/unzip"
     "net-misc/rsync"
     "dev-vcs/git"
@@ -310,7 +310,7 @@ echo ":: Installation complete."
 echo
 
 # Start Spinner
-# gum spin --spinner dot --title "Starting setup now..." -- sleep 3
+gum spin --spinner dot --title "Starting setup now..." -- sleep 3
 
 # Run setup with Gentoo platform flag
 ml4w-hyprland-setup -p gentoo
